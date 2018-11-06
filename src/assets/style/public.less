@@ -1,0 +1,246 @@
+//头部
+.top{
+  width:100%;
+  height: 60px;
+  position: relative;
+  background-color: #333333;
+  >ul{
+    width:300px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    >li{
+      width: 33%;
+      height: 60px;
+      line-height: 60px;
+      display: inline-block;
+      float: left;
+      text-align: center;
+      color: white;
+      >a{
+        text-decoration: none;
+        font-family: "微软雅黑";
+        color: #fff;
+        >img{
+          display: inline-block;
+          vertical-align: middle;
+          margin-bottom: 3px;
+          margin-left: 20px;
+        }
+      }
+      >span{
+        margin: 0 5px;
+      }
+    }
+  }
+}
+//导航栏
+.nav{
+  width: 100%;
+  height: 100px;
+  min-width: 1200px;
+  margin: 0;
+  position: fixed;
+  top: 60px;
+  z-index: 10;
+  background: rgba(255,255,255,.1);
+  .nav-lf{
+    float: left;
+    width: 300px;
+    text-align: center;
+    img{
+      display: inline-block;
+      margin: 25px auto;
+    }
+  }
+  .nav-rg{
+    width: 500px;
+    float: right;
+    margin-right: 100px;
+    display: flex;
+      >li{
+       flex: 1;
+        text-align: center;
+        line-height: 100px;
+        a{
+          text-decoration: none;
+          cursor: pointer;
+          color: #c0c0c0;
+        }
+        a:hover{
+          color: #FFF;
+        }
+      }
+    }
+}
+//轮播图
+.banner{
+  width: 100%;
+  max-height: 850px;
+  min-width: 531.25px;
+  position: relative;
+  .el-button{
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    bottom: 120px;
+    margin: 0 auto;
+    z-index: 999;
+  }
+}
+.ban-img{
+  width: 100%;
+  height: 100%;
+}
+//文字说明
+.H-TEXT{
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  h1{
+    font-size: 28px;
+    font-family: "微软雅黑";
+    margin: 20px auto;
+  }
+  h3{
+    font-size: 24px;
+    font-family: "Times New Roman";
+    margin: 20px auto;
+  }
+  p{
+    font-size: 20px;
+    line-height: 32px;
+  }
+  b{
+    width: 70px;
+    height: 3px;
+    background-color: darkcyan;
+    display: block;
+    margin: 20px auto;
+  }
+}
+footer{
+  width: 100%;
+  min-width: 1200px;
+  margin-top: 50px;
+  max-height: 240px;
+  background-color: #333333;
+  >div{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    >ul{
+      flex: 1;
+      margin: 30px;
+      li{
+        line-height: 40px;
+        color: #989898;
+      }
+    }
+    >ul:nth-child(1){
+      flex: .7;
+        li:nth-child(1){
+          font-size: 24px;
+          color: #fff;
+        }
+      li{
+        font-size: 12px;
+      }
+    }
+    >ul:nth-child(2){
+      flex: 1;
+      display: flex;
+      text-align: center;
+      margin-top: 45px;
+      li{
+        flex: 1;
+        a{
+          text-decoration: none;
+          color: #989898;
+        }
+      }
+      >li:nth-child(2){
+       a{
+         color: #fff;
+       }
+      }
+    }
+    >ul:nth-child(3){
+      margin-top: 40px;
+      flex: .7;
+      li{
+        text-align: center;
+      }
+      li:nth-child(1){
+        font-size: 24px;
+        color: #fff;
+      }
+      li:nth-child(2){
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+    >ul:nth-child(4){
+      flex: .8;
+      li{
+        float: left;
+        text-align: center;
+        width: 40%;
+        margin-right: 20px;
+        img{
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+//个人中心导航
+.detail>.nav{
+  height: 80px;
+  margin: 0;
+  background-color: #333333;
+  position:relative;
+  top: 0;
+  left: 0;
+  .nav-lf{
+    margin-left: 50px;
+    line-height: 80px;
+    img{
+      margin: 20px auto;
+    }
+  }
+  .nav-rg{
+    width: 45%;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    li{
+      line-height: 80px;
+    }
+  }
+  .cen-nav{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    display: flex;
+    li{
+      flex: 1;
+      line-height: 80px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      a{
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
